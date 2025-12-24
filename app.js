@@ -1,6 +1,12 @@
-let cash = 50
-let price = 40
-let isStoreOpen = true
 
-let str = cash >= price && isStoreOpen ? 'give receipt' : 'do not give receipt'
-console.log(str)
+
+
+
+const cToF = celsius => {
+    return celsius * 1.8 + 32
+}
+
+console.log(cToF(0));
+console.log(cToF(10));
+console.log(cToF(30));
+

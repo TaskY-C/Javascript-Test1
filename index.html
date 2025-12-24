@@ -8,10 +8,17 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <section id="landing">
+    <section id="Landing">
         <div class="container">
             <div class="row">
- <h1> Data Types & Variables</h1>
+                <h1>Javascript</h1>
+            </div>
+        </div>
+    </section>
+    <section id="Data">
+        <div class="container">
+            <div class="row">
+ <h2 class="section__title"> Data Types & Variables</h2>
  <div class="types">
     <div class="type">
         <div class="type__title">String</div>
@@ -56,17 +63,109 @@
 <section id="conditionals">
     <div class="container">
         <div class="row">
-            <h2>Conditionals</h2>
+            <h2 class="section__title">Conditionals</h2>
             <div class="conditionals">
-                <div class="conditional">If, Else If, Else</div>
-                <div class="conditional"></div>
-                <div class="conditional"></div>
-                <div class="conditional"></div>
-                <div class="conditional"></div>
-                <div class="conditional"></div>
+                <div class="conditional">
+                    <div class="conditional__title">If, Else If, Else</div>
+                    <div class="conditional__ex">let cash = 40<br>
+                    let price = 40 <br>
+                    if (cash > price) {console.log('here is change')} <br>
+                    else if (cash === price) {console.log('have a nice day')}  <br>
+                    else {console.log('not enough money you owe more')}
+                </div>
+                </div>
+                <div class="conditional">
+                    <div class="conditional__title">Comparison Operators</div>
+                    <div class="conditional__ex">
+                        <li>== Equal Values</li>
+                        <li>=== Equal Values and Types</li>
+                        <li>!= Not Equal</li>
+                        <li>!== Not Equal Value and Type</li>
+                        <li>> Greater than</li>
+                        <li>< Less than</Less></li>
+                        <li>>= Greater than or Equal</li>
+                        <li><= Less than or Equal</li>
+                    </div>
+                </div>
+                <div class="conditional">
+                    <div class="conditional__title">Logical Operators</div>
+                    <div class="conditional__ex">
+                        <li>True && True ---True</li>
+                        <li>True && False ---False</li>
+                        <li>False && True ---False</li>
+                        <li>False && False ---False</li>
+                        <li>True || True ---True</li>
+                        <li>True || False ---True</li>
+                        <li>False || True ---True</li>
+                        <li>False || False ---False</li>
+                    </div>
+                    <div class="conditional__ex">
+                        Here is a practical example:<br>
+                        let cash = 50
+                        let price = 40
+                        let isStoreOpen = True <br>
+                        if (cash >= price && isStoreOpen === true)<br>
+                        {console.log('Enough cash to buy')}
+
+                    </div>
+                </div>
+                <div class="conditional">
+                    <div class="conditional__title">Falsy Values</div>
+                    <div class="conditional__ex">Considered as False when converted to a boolean
+                        <li>Undefined</li>
+                        <li>Null</li>
+                        <li>Nan - Not a number</li>
+                        <li>0</li>
+                        <li>"" - Empty string</li>
+                        <li>False</li>
+                    </div>
+                </div>
+                <div class="conditional">
+                    <div class="conditional__title">Truth Values</div>
+                    <div class="conditional__ex">True when converted to a boolean
+                       <li>Numbers -- 10, 3.1</li> 
+                       <li>Strings -- 'False' , '0'</li> 
+                    </div>
+                </div>
+                <div class="conditional">
+                    <div class="conditional__title">Turnary Operators</div>
+                    <div class="conditional__ex">Shortcut for if else conditions<br>
+                        let hot = true <br>
+                        hot? console.log('weather is hot') : console.log('weather is cold') *this prints out to console* <br>
+                        let subscribed = true <br>
+                        let loggedIn = true <br>
+                        let str = subscribed && loggedIn? 'Show video' : 'Hide video' console.log(str)    
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
+</section>
+<section id="loops">
+    <div class="container">
+        <div class="row">
+            <h2 class="section__title">Loops</h2>
+            <div class="loops">
+                <div class="loop">
+                    <div class="loop__title">For Loop</div>
+                    <div class="loop__desc">Repeat code over and over until a given condition to stop</div>
+                    <div class="loop__ex"> for (let i = 0; i < 100; i++) {console.log(i)} </div> 
+                </div>
+                <div class="loop">
+                    <div class="loop__title">While Loop and Do While Loop</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="functions">
+<div class="container">
+    <div class="row">
+        <h2 class="section__title">Functions</h2>
+        <div class="function">Block of code designed to perform a particular task</div>
+    </div>
+</div>
 </section>
 </body>
 </html>
